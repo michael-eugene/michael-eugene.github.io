@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: #151515;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin: 0 1em;
+}
+ul li.link-item:hover {
+  color: #949495;
+  cursor: pointer;
+}
+
+.sec {
+  color: #ffffff;
+}
+
+.pry {
+  color: #949495;
+}
+
+.link {
+  font-style: italic;
+}
+
+.txt-x2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+#section {
+  margin: 0 auto;
+}
+
+div.rectangle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202022;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+div.rectangle p {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1em 0;
+}
+div.rectangle div {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+div.rectangle:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 900px) {
+  div#app.flex {
+    display: flex;
+  }
+
+  div.rectangle p {
+    font-size: 3rem;
+  }
+
+  #hero {
+    padding: 1em 5em;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #section {
+    width: 60vw;
+  }
+}

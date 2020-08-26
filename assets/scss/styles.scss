@@ -1,0 +1,111 @@
+$pry-text: #949495;
+$sec-text: #ffffff;
+$pry-color: #151515;
+$sec-color: #202022;
+$header: 3rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// TAGS
+body {
+  font-family: 'Karla', sans-serif;
+  background: $pry-color;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0 1em;
+  }
+
+  li.link-item:hover {
+    color: $pry-text;
+    cursor: pointer;
+  }
+}
+
+// GLOBAL CLASSES
+.sec {
+  color: $sec-text;
+}
+
+.pry {
+  color: $pry-text;
+}
+
+.link {
+  font-style: italic;
+}
+
+.txt-x2 {
+  font-size: $header;
+  font-weight: 700;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+// ID's
+#section {
+  margin: 0 auto;
+}
+
+// SPECIFIC CLASSES
+div.rectangle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $sec-color;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1em 0;
+  }
+  
+  div {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+  }
+}
+
+div.rectangle:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 900px) {
+  div#app.flex {
+    display: flex;
+  }
+
+  div.rectangle {
+    p {
+      font-size: 3rem;
+    }
+  }
+  #hero {
+    padding: 1em 5em;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #section {
+    width: 60vw;
+  }
+}
