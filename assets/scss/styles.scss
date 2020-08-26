@@ -2,12 +2,13 @@ $pry-text: #949495;
 $sec-text: #ffffff;
 $pry-color: #151515;
 $sec-color: #202022;
-$header: 3rem;
+$header: 2.5rem;
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 // TAGS
@@ -18,12 +19,12 @@ body {
 
 ul {
   display: flex;
-  width: 100%;
   padding: 0;
+  margin-top: 2em;
 
   li {
     list-style: none;
-    margin: 0 1em;
+    margin-right: 2em;
   }
 
   li.link-item:hover {
@@ -55,21 +56,28 @@ ul {
 }
 
 // ID's
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about {
+  margin-top: 1em;
+}
 #section {
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 // SPECIFIC CLASSES
 div.rectangle {
-  position: relative;
   background: $sec-color;
-  cursor: pointer;
   transition: all 200ms ease-in-out;
   margin: .5em auto;
+  cursor: pointer;
 
   div.text {
     padding: 3em 2em;
-    
     p {
       margin: 0;
     }
@@ -77,20 +85,10 @@ div.rectangle {
       font-size: 1rem;
     }
   }
-  
-  div.link-container {
-    position: absolute;
-    top: .5em;
-    right: .5em;
-    display: none;
-  }
 }
 
 div.rectangle:hover {
   transform: scale(1.05);
-  div.link-container {
-    display: initial;
-  }
 }
 
 
@@ -106,15 +104,14 @@ div.rectangle:hover {
       }
     }
   }
+
   #hero {
     padding: 6em;
     width: 45vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
     position: fixed;
   }
+
   #section {
     width: 55vw;
     position: absolute;

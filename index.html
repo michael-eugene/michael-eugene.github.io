@@ -7,10 +7,6 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Michael Eugene: Software Engineer</title>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -18,98 +14,70 @@
   <body>
     <div id="app" class="flex">
       <div class="container" id="hero">
-        <div id="top">
-          <p
-            class="sec txt-x2 animate__animated animate__fadeInDown animate__delay-1s"
-          >
-            Hello, I'm Michael Eugene.
-          </p>
-          <p class="pry animate__animated animate__fadeInUp animate__delay-2s">
-            A Freelance Software Engineer, who mostly does front-end
-            development. I’m a very, very big
-            <a href="https://vuejs.org" class="sec link" target="_blank"
-              >Vue.js</a
-            >
-            fan boy and I legit can not shut up about it. Feel free to check out
-            my resume or give me a follow on any social below.
-          </p>
-        </div>
-        <div
-          id="bottom"
-          class="animate__animated animate__fadeIn animate__delay-3s"
-        >
-          <ul>
-            <li class="link-item">
-              <a
-                href="https://linkedin.com/michael-eugene"
-                class="sec"
-                target="_blank"
-                ><i data-feather="linkedin"></i
-              ></a>
-            </li>
-            <li class="link-item">
-              <a
-                href="https://twitter.com/youthisboy"
-                class="sec"
-                target="_blank"
-                ><i data-feather="twitter"></i
-              ></a>
-            </li>
-            <li class="link-item">
-              <a
-                href="https://github.com/michael-eugene"
-                class="sec"
-                target="_blank"
-                ><i data-feather="github"></i
-              ></a>
-            </li>
-            <li class="link-item">
-              <a
-                href="https://instagram.com/youthisboy"
-                class="sec"
-                target="_blank"
-                ><i data-feather="instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+        <p class="sec txt-x2" id="title">Hello, I'm Michael Eugene.</p>
+        <p id="about" class="pry">
+          I'm a Software Engineer currently working as a Freelancer. I mostly do
+          front-end development, and I'm a complete
+          <a href="https://vuejs.org" class="link sec">Vue.js</a> fan boy, and
+          somehow surprisingly, a CSS nerd. Other times, i work my way through
+          the back-end using
+          <a href="https://rubyonrails.org/" class="link sec">Ruby on Rails</a>.
+        </p>
+        <ul id="socials">
+          <li class="link-item">
+            <a
+              href="https://linkedin.com/michael-eugene"
+              class="sec"
+              target="_blank"
+              ><i data-feather="linkedin"></i
+            ></a>
+          </li>
+          <li class="link-item">
+            <a href="https://twitter.com/youthisboy" class="sec" target="_blank"
+              ><i data-feather="twitter"></i
+            ></a>
+          </li>
+          <li class="link-item">
+            <a
+              href="https://github.com/michael-eugene"
+              class="sec"
+              target="_blank"
+              ><i data-feather="github"></i
+            ></a>
+          </li>
+          <li class="link-item">
+            <a
+              href="https://instagram.com/youthisboy"
+              class="sec"
+              target="_blank"
+              ><i data-feather="instagram"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-      <div
-        class="container animate__animated animate__zoomIn animate__delay-4s"
-        id="section"
-      >
-        <!-- <p class="sec txt-x2">{{title}}</p> -->
+      <div class="container" id="section">
+        <p class="sec txt-x2">Projects</p>
         <!-- Rectangle 1 -->
         <div class="rectangle">
           <div class="text">
             <p class="sec">TASKRR</p>
             <p class="pry">A feature rich calender/scheduler webapp.</p>
           </div>
-          <div class="link-container">
-            <a href="#" target="_blank"
-              ><i data-feather="external-link" class="sec"></i
-            ></a>
-          </div>
         </div>
 
         <!-- Rectangle 2 -->
         <div class="rectangle">
           <div class="text">
-            <p class="sec">EXPENSES</p>
+            <p class="sec">VUE-EXPENSES</p>
             <p class="pry">
               A simple vue.js webapp created to track your expenses.
             </p>
-          </div>
-          <div class="link-container">
-            <a href="#" target="_blank"
-              ><i data-feather="external-link" class="sec"></i
-            ></a>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="assets/js/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <script src="assets/js/main.js"></script>
 </html>
