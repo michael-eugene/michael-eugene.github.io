@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Michael Eugene: Software Engineer</title>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -15,19 +19,25 @@
     <div id="app" class="flex">
       <div class="container" id="hero">
         <div id="top">
-          <p class="sec txt-x2">Hello, I'm Michael Eugene.</p>
-          <p class="pry">
+          <p
+            class="sec txt-x2 animate__animated animate__fadeInDown animate__delay-1s"
+          >
+            Hello, I'm Michael Eugene.
+          </p>
+          <p class="pry animate__animated animate__fadeInUp animate__delay-2s">
             A Freelance Software Engineer, who mostly does front-end
-            development. I’m a
+            development. I’m a very, very big
             <a href="https://vuejs.org" class="sec link" target="_blank"
               >Vue.js</a
             >
-            nerd. But if you need me for some back-end work, allow me to
-            introduce you to my
-            <a href="#" class="sec link" target="_blank">resume</a>.
+            fan boy and I legit can not shut up about it. Feel free to check out
+            my resume or give me a follow on any social below.
           </p>
         </div>
-        <div id="bottom">
+        <div
+          id="bottom"
+          class="animate__animated animate__fadeIn animate__delay-3s"
+        >
           <ul>
             <li class="link-item">
               <a
@@ -64,12 +74,16 @@
           </ul>
         </div>
       </div>
-      <div class="container" id="section">
+      <div
+        class="container animate__animated animate__zoomIn animate__delay-4s"
+        id="section"
+      >
+        <!-- <p class="sec txt-x2">{{title}}</p> -->
         <!-- Rectangle 1 -->
         <div class="rectangle">
           <div class="text">
-            <p class="sec">REPOSTLYGRAM</p>
-            <p class="sub pry">An instagram repost webapp.</p>
+            <p class="sec">TASKRR</p>
+            <p class="pry">A feature rich calender/scheduler webapp.</p>
           </div>
           <div class="link-container">
             <a href="#" target="_blank"
@@ -82,7 +96,9 @@
         <div class="rectangle">
           <div class="text">
             <p class="sec">EXPENSES</p>
-            <p class="sub pry">A simple webapp to track your expenses.</p>
+            <p class="pry">
+              A simple vue.js webapp created to track your expenses.
+            </p>
           </div>
           <div class="link-container">
             <a href="#" target="_blank"
@@ -93,6 +109,7 @@
       </div>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <script src="assets/js/main.js"></script>
 </html>

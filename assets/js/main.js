@@ -3,8 +3,8 @@ feather.replace()
 
 // VUE INSTANCE
 new Vue({
-  el: '#app',
+  el: '#section',
   data: {
-    title: 'Hello World!!!!'
+    title: 'Projects'
   }
 })
