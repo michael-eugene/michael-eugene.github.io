@@ -68,14 +68,24 @@ div.rectangle {
   background: $sec-color;
   cursor: pointer;
   transition: all 500ms ease-in-out;
+  margin: 2em 0;
+  border-radius: 1em;
 
-  p {
-    font-size: 2rem;
-    font-weight: 400;
+  div.text {
     padding: 1em 0;
+    margin: 3em;
+    
+    p {
+      margin: 0;
+      text-align: center;
+    }
+    p.sec {
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
   
-  div {
+  div.link-container {
     position: absolute;
     top: .5em;
     right: .5em;
@@ -93,8 +103,10 @@ div.rectangle:hover {
   }
 
   div.rectangle {
-    p {
-      font-size: 3rem;
+    div.text {
+      p.sec {
+        font-size: 3rem;
+      }
     }
   }
   #hero {
@@ -104,8 +116,12 @@ div.rectangle:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
   }
   #section {
     width: 60vw;
+    position: absolute;
+    right: 0;
+    height: 1000px;
   }
 }

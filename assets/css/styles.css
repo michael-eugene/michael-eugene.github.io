@@ -56,13 +56,22 @@ div.rectangle {
   background: #202022;
   cursor: pointer;
   transition: all 500ms ease-in-out;
+  margin: 2em 0;
+  border-radius: 1em;
 }
-div.rectangle p {
+div.rectangle div.text {
+  padding: 1em 0;
+  margin: 3em;
+}
+div.rectangle div.text p {
+  margin: 0;
+  text-align: center;
+}
+div.rectangle div.text p.sec {
   font-size: 2rem;
   font-weight: 400;
-  padding: 1em 0;
 }
-div.rectangle div {
+div.rectangle div.link-container {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
@@ -77,7 +86,7 @@ div.rectangle:hover {
     display: flex;
   }
 
-  div.rectangle p {
+  div.rectangle div.text p.sec {
     font-size: 3rem;
   }
 
@@ -88,9 +97,13 @@ div.rectangle:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
   }
 
   #section {
     width: 60vw;
+    position: absolute;
+    right: 0;
+    height: 1000px;
   }
 }
