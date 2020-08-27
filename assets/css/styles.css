@@ -45,6 +45,23 @@ ul li.link-item:hover {
   padding: 1em 2em;
 }
 
+.modal {
+  position: fixed;
+  padding: 0.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20vh;
+  bottom: 20vh;
+  left: 1em;
+  right: 1em;
+  background: #202022;
+  z-index: 99;
+  transition: all 300ms;
+}
+
 #hero {
   height: 100vh;
   display: flex;
@@ -76,8 +93,8 @@ div.rectangle div.text p.sec {
   font-size: 1rem;
 }
 
-div.rectangle:hover {
-  transform: scale(1.05);
+div.noDisplay {
+  display: none;
 }
 
 @media screen and (min-width: 900px) {
@@ -87,6 +104,11 @@ div.rectangle:hover {
 
   div.rectangle div.text p.sec {
     font-size: 1.5rem;
+  }
+
+  .modal {
+    left: 20vw;
+    right: 20vw;
   }
 
   #hero {
@@ -99,5 +121,9 @@ div.rectangle:hover {
     width: 55vw;
     position: absolute;
     right: 0;
+  }
+
+  div.rectangle:hover {
+    transform: scale(1.05);
   }
 }

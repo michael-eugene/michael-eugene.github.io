@@ -56,28 +56,30 @@
         </ul>
       </div>
       <div class="container" id="section">
-        <p class="sec txt-x2">Projects</p>
-        <!-- Rectangle 1 -->
-        <div class="rectangle">
-          <div class="text">
-            <p class="sec">TASKRR</p>
-            <p class="pry">A feature rich calender/scheduler webapp.</p>
+        <div id="projects">
+          <p class="sec txt-x2">Projects</p>
+          <!-- Rectangle 1 -->
+          <div @click="openModal" class="rectangle">
+            <div class="text">
+              <p class="sec">Taskrr</p>
+              <p class="pry">A feature rich calender/scheduler webapp.</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Rectangle 2 -->
-        <div class="rectangle">
-          <div class="text">
-            <p class="sec">VUE-EXPENSES</p>
-            <p class="pry">
-              A simple vue.js webapp created to track your expenses.
-            </p>
+          <!-- Rectangle 2 -->
+          <div @click="openModal" class="rectangle">
+            <div class="text">
+              <p class="sec">Vue-Expenses</p>
+              <p class="pry">
+                A simple vue.js webapp created to track your expenses.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="assets/js/main.js"></script>
 </html>
