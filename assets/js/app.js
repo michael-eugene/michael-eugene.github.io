@@ -3,20 +3,29 @@ new Vue({
   el: '#app',
   data: {
     listItems: [
+      // {
+      //   title: 'Dosage',
+      //   description: 'A simple reminder application',
+      // },
       {
-        title: 'Dosage',
-        description: 'A simple reminder application',
-      },
-      {
-        title: 'Welp',
-        description: 'Expenses tracker made with vuejs',
+        title: 'My Portfolio',
+        description: 'Github repo of my portfolio',
+        href: 'https://github.com/michael-eugene/michael-eugene.github.io'
       },
       {
         title: 'Hire Me',
-        description: 'Available for both contract and full-time projects',
+        description: 'Contract and Full-time Projects',
+        href: 'mailto:eugenemichael21@yahoo.com'
       },
     ],
   },
+  methods: {
+    openLink: (e) => {
+      url = e.currentTarget.children[2].innerText
+      window.open(url, "_blank")
+
+    }
+  }
 })
 
 // FEATHER ICONS

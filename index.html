@@ -14,14 +14,15 @@
         <p class="sub" id="title"> </p>
         <a id="scroll" href="#container" class="animate">
           <p>My Projects</p>
-          <i data-feather="arrow-down"></i>
+          <i data-feather="arrow-down" id="arroww"></i>
         </a>
       </div>
       <section id="container" class="wrapper animate">
-        <template v-for="item in listItems">
-          <div class="rectangle">
-            <p>{{item.title}}</p> 
+        <template v-for="item in listItems" :key="item">
+          <div class="rectangle" @click="openLink">
+            <p class="title">{{item.title}}</p> 
             <p>{{item.description}}</p>
+            <span style="display: none;">{{item.href}}</span>
           </div>
         </template>
       </section>

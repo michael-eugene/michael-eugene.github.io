@@ -21,18 +21,24 @@ body {
   background-color: $bg-pry;
   background-attachment: fixed;
   width: 85vw;
-  overflow: hidden;
 }
 a {
   color: $txt-sec;
   text-decoration: none;
   font-family: 'Roboto Mono';
+  margin: 2em;
+  p {
+    padding: 0 .5em;
+  }
 }
-
 // Global Classes
 p.header {
   color: $txt-pry;
   font-size: 2rem;
+}
+p.title {
+  color: $txt-pry;
+  font-size: 1.3rem;
 }
 p.sub {
   color: $txt-sec;
@@ -52,9 +58,7 @@ section {
   position: relative;
 }
 #scroll {
-  text-align: center;
-  position: absolute;
-  bottom: 2rem;
+  display: flex;
 }
 
 // Specific
@@ -84,13 +88,12 @@ div.rectangle {
       height: fit-content;
     }
   }
-  footer {
-    opacity: 1;
-  }
   #scroll {
     display: none;
   }
-
+  footer {
+    opacity: 1;
+  }
   div.rectangle:hover {
     transform: scale(1.1);
   }
