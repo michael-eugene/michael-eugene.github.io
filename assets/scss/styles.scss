@@ -16,7 +16,13 @@ $header: 2.5rem;
 body {
   font-family: 'Karla', sans-serif;
   background: $pry-color;
+
+  .no-scroll {
+    height: 100%;
+    overflow-y: hidden;
+  }
 }
+
 
 ul {
   display: flex;

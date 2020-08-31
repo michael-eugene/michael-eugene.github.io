@@ -9,8 +9,19 @@ gsap.from('#section', { delay: 4, opacity: 0, duration: 1.5})
 
 // VUE INSTANCE
 new Vue({
-  el: '#projects',
-  data: {},
+  el: '#app',
+  data: {
+    projects: [
+      {
+        title: 'Taskrr',
+        description: 'A feature rich calender/scheduler webapp.'
+      },
+      {
+        title: 'Vue-Expenses',
+        description: 'A simple vue.js webapp created to track your expenses.'
+      }
+    ]
+  },
   methods: {
     openModal: function (e) {
       e.currentTarget.classList.toggle('modal')

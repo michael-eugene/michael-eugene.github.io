@@ -56,26 +56,18 @@
         </ul>
       </div>
       <div class="container" id="section">
-        <div id="projects">
-          <p class="sec txt-x2">Projects</p>
-          <!-- Rectangle 1 -->
-          <div @click="openModal" class="rectangle">
-            <div class="text">
-              <p class="sec">Taskrr</p>
-              <p class="pry">A feature rich calender/scheduler webapp.</p>
-            </div>
+        <p class="sec txt-x2">Projects</p>
+        <template v-for="project in projects">
+          <div>
+            <div @click="openModal" class="rectangle">
+              <div class="text">
+                <p class="sec">{{project.title}}</p>
+                <p class="pry">
+                  {{project.description}}
+                </p>
+              </div>
           </div>
-
-          <!-- Rectangle 2 -->
-          <div @click="openModal" class="rectangle">
-            <div class="text">
-              <p class="sec">Vue-Expenses</p>
-              <p class="pry">
-                A simple vue.js webapp created to track your expenses.
-              </p>
-            </div>
-          </div>
-        </div>
+        </template>
       </div>
     </div>
   </body>
