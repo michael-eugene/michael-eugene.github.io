@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  color: #949495;
+  background-color: #000000;
+  background-attachment: fixed;
+  width: 85vw;
+  overflow: hidden;
+}
+
+a {
+  color: #949495;
+  text-decoration: none;
+  font-family: "Roboto Mono";
+}
+
+p.header {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+p.sub {
+  color: #949495;
+}
+
+span.typed-cursor {
+  display: none;
+}
+
+#txt-intro,
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#scroll {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+}
+
+div.rectangle {
+  border-radius: 0.4em;
+  background: #202022;
+  width: 100%;
+  padding: 2em;
+  margin: 0.5em 0;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+@media screen and (min-width: 900px) {
+  body {
+    width: 80vw;
+  }
+
+  #app {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  #app .wrapper {
+    width: 50%;
+    height: fit-content;
+  }
+
+  footer {
+    opacity: 1;
+  }
+
+  #scroll {
+    display: none;
+  }
+
+  div.rectangle:hover {
+    transform: scale(1.1);
+  }
+}

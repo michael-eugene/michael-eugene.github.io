@@ -1,0 +1,97 @@
+// Colors
+$bg-pry: #000000;
+$bg-sec: #202022;
+$txt-pry: #ffffff;
+$txt-sec: #949495;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+// Tags
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  color: $txt-sec;
+  background-color: $bg-pry;
+  background-attachment: fixed;
+  width: 85vw;
+  overflow: hidden;
+}
+a {
+  color: $txt-sec;
+  text-decoration: none;
+  font-family: 'Roboto Mono';
+}
+
+// Global Classes
+p.header {
+  color: $txt-pry;
+  font-size: 2rem;
+}
+p.sub {
+  color: $txt-sec;
+}
+span.typed-cursor {
+  display: none;
+}
+
+// Id's
+#txt-intro,
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#scroll {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+}
+
+// Specific
+div.rectangle {
+  border-radius: 0.4em;
+  background: $bg-sec;
+  width: 100%;
+  padding: 2em;
+  margin: 0.5em 0;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+  p {
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    width: 80vw;
+    // height: 100vh;
+  }
+  #app {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    .wrapper {
+      width: 50%;
+      height: fit-content;
+    }
+  }
+  footer {
+    opacity: 1;
+  }
+  #scroll {
+    display: none;
+  }
+
+  div.rectangle:hover {
+    transform: scale(1.1);
+  }
+}
