@@ -3,26 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Michael Eugene - Software Developer!</title>
   </head>
   <body>
     <div id="app" class="header">
       <div id="txt-intro" class="wrapper">
-        <p class="header" id="fName"> ‎</p>
-        <p class="sub" id="title"> </p>
+        <p class="header" id="fName">‎</p>
+        <p class="sub" id="title"></p>
         <a id="scroll" href="#container" class="animate">
           <p>My Projects</p>
           <i data-feather="arrow-down" id="arroww"></i>
         </a>
       </div>
       <section id="container" class="wrapper animate">
-        <template v-for="item in listItems" :key="item">
-          <div class="rectangle" @click="openLink">
-            <p class="title">{{item.title}}</p> 
+        <template v-for="(item, index) in listItems" :key="index">
+          <div
+            class="rectangle"
+            @click="openLink"
+          >
+            <p class="title">{{item.title}}</p>
             <p>{{item.description}}</p>
-            <span style="display: none;">{{item.href}}</span>
+            <div class="buttons">
+              <a :href="item.github" target="_blank"><i data-feather="github" class="btn"></i></a>
+              <a :href="item.main" target="_blank"><i data-feather="external-link" class="btn"></i></a>
+            </div>
+            <span style="display: none">{{item.href}}</span>
           </div>
         </template>
       </section>

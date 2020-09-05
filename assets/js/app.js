@@ -8,24 +8,28 @@ new Vue({
       //   description: 'A simple reminder application',
       // },
       {
-        title: 'My Portfolio',
-        description: 'Github repo of my portfolio',
-        href: 'https://github.com/michael-eugene/michael-eugene.github.io'
+        title: 'Vue-Weather-App',
+        description:
+          'A simple Vuejs app that tells the weather of any location chosen.',
+        github: 'https://github.com/michael-eugene/vue-weather',
+        main: 'https://vue-weather-v2.netlify.com',
       },
       {
         title: 'Hire Me',
         description: 'Contract and Full-time Projects',
-        href: 'mailto:eugenemichael21@yahoo.com'
+        href: 'mailto:eugenemichael21@yahoo.com',
       },
     ],
+    isActive: false,
   },
   methods: {
-    openLink: (e) => {
-      url = e.currentTarget.children[2].innerText
-      window.open(url, "_blank")
-
-    }
-  }
+    openLink(e) {
+      url = e.currentTarget.children[3].textContent
+      if (url !== '') {
+        window.open(url)
+      }
+    },
+  },
 })
 
 // FEATHER ICONS
@@ -36,14 +40,14 @@ new Typed('#fName', {
   strings: ['Michael Eugene'],
   typeSpeed: 25,
   fadeOut: true,
-  startDelay: 1000
+  startDelay: 1000,
 })
 new Typed('#title', {
   strings: ['Software Developer'],
   typeSpeed: 40,
   fadeOut: true,
-  startDelay: 2200
+  startDelay: 2200,
 })
 
 // GSAP
-gsap.from('.animate', {y: 20, opacity: 0, duration: .9, delay: 3.5})
+gsap.from('.animate', { y: 20, opacity: 0, duration: 0.9, delay: 3.5 })

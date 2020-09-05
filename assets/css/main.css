@@ -65,9 +65,35 @@ div.rectangle {
   width: 100%;
   padding: 2em;
   margin: 0.5em 0;
-  cursor: pointer;
   transition: all ease-in-out 200ms;
 }
+div.rectangle div.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+div.rectangle div.buttons a {
+  margin: 0;
+}
+div.rectangle div.buttons .btn {
+  cursor: pointer;
+  margin: 1.5em 0 0 0.5em;
+}
+div.rectangle div.buttons .btn:hover {
+  color: #ffffff;
+}
+div.rectangle:last-child {
+  cursor: pointer;
+}
+div.rectangle:last-child div.buttons {
+  display: none;
+}
+div.rectangle:last-child:hover {
+  background: #ffffff;
+}
+div.rectangle:last-child:hover p.title {
+  color: #000000;
+}
+
 @media screen and (min-width: 900px) {
   body {
     width: 80vw;
