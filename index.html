@@ -21,16 +21,27 @@
         </a>
       </div>
       <section id="container" class="wrapper animate">
+        <p class="header">About Me</p>
+        <div id="about">
+          I'm a Software Engineer currently working as a freelancer. I mostly do
+          front-end development and im a complete
+          <a href="https://vuejs.org" target="_blank" class="abt-link">Vuejs</a> and part time
+          CSS nerd. I just recently started reading on and slowly becoming
+          someone who can't seem to shut up about Test-driven development. I'm
+          also an active member of the <a href="#" class="abt-link">Google DSC, UNILAG</a>.
+        </div>
+        <p class="header">My Projects</p>
         <template v-for="(item, index) in listItems" :key="index">
-          <div
-            class="rectangle"
-            @click="openLink"
-          >
+          <div class="rectangle" @click="openLink">
             <p class="title">{{item.title}}</p>
             <p>{{item.description}}</p>
             <div class="buttons">
-              <a :href="item.github" target="_blank"><i data-feather="github" class="btn"></i></a>
-              <a :href="item.main" target="_blank"><i data-feather="external-link" class="btn"></i></a>
+              <a :href="item.github" target="_blank"
+                ><i data-feather="github" class="btn"></i
+              ></a>
+              <a :href="item.main" target="_blank"
+                ><i data-feather="external-link" class="btn"></i
+              ></a>
             </div>
             <span style="display: none">{{item.href}}</span>
           </div>

@@ -21,6 +21,7 @@ new Vue({
       },
     ],
     isActive: false,
+    showProjects: true
   },
   methods: {
     openLink(e) {

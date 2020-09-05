@@ -26,7 +26,7 @@ a {
   color: $txt-sec;
   text-decoration: none;
   font-family: 'Roboto Mono';
-  margin: 2em;
+  text-decoration: underline;
   p {
     padding: 0 0.5em;
   }
@@ -61,6 +61,15 @@ section {
   display: flex;
 }
 
+section {
+  margin: 2em 0;
+  p.header {
+    margin: 0;
+    padding: 1em 0 0 0;
+    align-self: flex-start;
+  }
+}
+
 // Specific
 div.rectangle {
   border-radius: 0.4em;
@@ -78,7 +87,7 @@ div.rectangle {
     }
     .btn {
       cursor: pointer;
-      margin: 1.5em 0 0 .5em;
+      margin: 1.5em 0 0 0.5em;
 
       &:hover {
         color: $txt-pry;
