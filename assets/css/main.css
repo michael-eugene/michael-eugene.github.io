@@ -13,7 +13,6 @@ body {
   font-family: "Roboto Mono", "Courier New", Courier, monospace;
   color: #949495;
   background-color: #000000;
-  background-attachment: fixed;
   width: 85vw;
 }
 
@@ -52,7 +51,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 #scroll {
@@ -111,11 +109,22 @@ div.rectangle:last-child:hover p.title {
   #app {
     display: flex;
     align-items: center;
-    height: 100vh;
+    position: relative;
   }
-  #app .wrapper {
-    width: 50%;
+  #app #txt-intro {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+  #app section {
+    position: absolute;
+    top: 5em;
+    right: 0;
+    left: 50%;
     height: fit-content;
+  }
+  #app section .bottomm {
+    padding-bottom: 5em;
   }
 
   #scroll {

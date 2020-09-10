@@ -31,7 +31,7 @@
           also an active member of the <a href="#" class="abt-link">Google DSC, UNILAG</a>.
         </div>
         <p class="header">My Projects</p>
-        <template v-for="(item, index) in listItems" :key="index">
+        <template v-for="(item, index) in listItems" :key="index" class="bottomm">
           <div class="rectangle" @click="openLink">
             <p class="title">{{item.title}}</p>
             <p>{{item.description}}</p>

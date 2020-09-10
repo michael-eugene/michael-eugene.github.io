@@ -15,13 +15,20 @@ new Vue({
         main: 'https://vue-weather-v2.netlify.com',
       },
       {
+        title: 'Vue-News-App',
+        description:
+          'A very responsive news web app made with vue.',
+        github: 'https://github.com/michael-eugene/vue-news',
+        main: 'https://pensive-snyder-9583da.netlify.app/',
+      },
+      {
         title: 'Hire Me',
         description: 'Contract and Full-time Projects',
         href: 'mailto:eugenemichael21@yahoo.com',
       },
     ],
     isActive: false,
-    showProjects: true
+    showProjects: true,
   },
   methods: {
     openLink(e) {

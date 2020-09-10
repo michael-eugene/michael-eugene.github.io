@@ -19,7 +19,6 @@ body {
   font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
   color: $txt-sec;
   background-color: $bg-pry;
-  background-attachment: fixed;
   width: 85vw;
 }
 a {
@@ -55,7 +54,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 #scroll {
   display: flex;
@@ -119,10 +117,22 @@ div.rectangle {
   #app {
     display: flex;
     align-items: center;
-    height: 100vh;
-    .wrapper {
-      width: 50%;
+    position: relative;
+    #txt-intro {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+    section {
+      position: absolute;
+      top: 5em;
+      right: 0;
+      left: 50%;
       height: fit-content;
+
+      .bottomm {
+        padding-bottom: 5em;
+      }
     }
   }
   #scroll {
